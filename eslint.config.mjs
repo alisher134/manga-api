@@ -87,6 +87,7 @@ export default tseslint.config(
         },
       ],
       '@typescript-eslint/no-unsafe-argument': 'off',
+      '@typescript-eslint/no-unsafe-call': 'off',
       '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
       '@typescript-eslint/consistent-type-imports': [
         'error',
@@ -101,7 +102,7 @@ export default tseslint.config(
       'simple-import-sort/imports': [
         'warn',
         {
-          groups: [['^@?\\w'], ['^@/config'], ['^@/decorators'], ['^@/utils'], ['^@/modules']],
+          groups: [['^@?\\w'], ['^@/configs'], ['^@/decorators'], ['^@/utils'], ['^@/modules']],
         },
       ],
     },
