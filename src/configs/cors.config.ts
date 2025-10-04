@@ -7,5 +7,6 @@ export const CORS_CONFIG = (configService: ConfigService): CorsOptions => {
   return {
     origin: allowedOrigins,
     methods: ['GET', 'POST', 'PATCH', 'PUT', 'DELETE'],
+    credentials: true,
   };
 };
